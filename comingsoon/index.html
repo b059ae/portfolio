@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400i,700i" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>С-КЛЕЙ. Клей для производства мебели</title>
+    <style>
+        /*body{font-family: 'Lobster', cursive;}*/
+        body {
+            font-family: 'PT Sans', sans-serif;
+            color: #4d4d4d;
+        }
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        h1 span{
+            font-size: 112px;
+        }
+        h1 span:after {
+            content: "\a";
+            white-space: pre;
+        }
+        ul {
+            font-size: 24px
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 36px;
+            }
+            h1 span{
+                font-size: 82px;
+            }
+            ul {
+                font-size: 18px
+            }
+        }
+        @media (max-width: 320px) {
+            h1 {
+                font-size: 28px;
+            }
+            h1 span{
+                font-size: 68px;
+            }
+            ul {
+                font-size: 16px
+            }
+        }
+        @media (min-width: 992px) {
+            html, body {
+                height: 100%;
+            }
+            .container{
+                height: 100%;
+                padding-top: 15%;
+            }
+            .row{
+                display: table-row;
+            }
+            .row div{
+                display: table-cell;
+                vertical-align: middle;
+                float:none;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-6">
+            <h1><span>Клей</span> для производства мебели</h1>
+            <ul class="text-left">
+                <li>Для склеивания поролонов, с текстилем, с деревянными поверхностями</li>
+                <li>Собственное производство клея</li>
+                <li>Официальный поставщик SIMALFA</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <img src="banka.png" class="img-responsive"/>
+        </div>
+    </div>
+</div>
+</body>
+</html>

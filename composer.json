@@ -11,9 +11,16 @@
         "issues": "https://github.com/noumo/easyii/issues"
     },
     "minimum-stability": "dev",
+    "repositories":
+    [
+        {
+            "type": "vcs",
+            "url": "https://github.com/b059ae/easyii"
+        }
+    ],
     "require": {
         "php": ">=5.4.0",
-        "noumo/easyii": "dev-dev"
+        "noumo/easyii": "dev-fork"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

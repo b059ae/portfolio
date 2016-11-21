@@ -5,19 +5,20 @@ $params = require(__DIR__ . '/params.php');
 $basePath =  dirname(__DIR__);
 $webroot = dirname($basePath);
 
-Yii::setAlias('@uploads', $webroot . DIRECTORY_SEPARATOR . 'uploads');
+Yii::setAlias('@uploads', $webroot .DIRECTORY_SEPARATOR.'web'. DIRECTORY_SEPARATOR . 'uploads');
+//Yii::setAlias('@uploads', 'uploads');
 
 $config = [
     'id' => 'app',
     'basePath' => $basePath,
     'bootstrap' => ['log'],
-    'language' => 'en-US',
+    'language' => 'ru',
     'runtimePath' => $webroot . '/runtime',
     'vendorPath' => $webroot . '/vendor',
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => '',
+            'cookieValidationKey' => 'salpfm3kfmk34mf3m4fklm',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -27,6 +28,18 @@ $config = [
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
+        ],
+        'urlManager' => [
+            'rules' => [
+                '<category:(syre-dla-klea|klej)>/<slug:[\w-]+>' => 'catalog/view',
+                '<slug:(syre-dla-klea|klej)>' => 'catalog/cat',
+                '<category:(blog)>/<slug:[\w-]+>' => 'articles/view',
+                '<slug:(blog)>' => 'articles/cat',
+                'dostavka' => 'page/dostavka',
+                'kontaktnaya-informacia' => 'page/kontakty',
+                '<controller:\w+>/view/<slug:[\w-]+>' => '<controller>/view',
+                '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+            ],
         ],
         'assetManager' => [
             // uncomment the following line if you want to auto update your assets (unix hosting only)
