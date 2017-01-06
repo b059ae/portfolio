@@ -21,13 +21,9 @@ $asset = \app\assets\AppAsset::register($this);
     </head>
     <body>
     <?php $this->beginBody() ?>
-    <?= Menu::widget([
-        'items' => ArrayHelper::merge(
-            yii\easyii\modules\menu\api\Menu::items('glavnoe-menu'),
-            \yii\easyii\modules\page\api\Page::menu()
-        )
-    ]); ?>
+    <?= $this->render('_header', ['asset' => $asset]); ?>
     <?= $content ?>
+    <?= $this->render('_footer', ['asset' => $asset]); ?>
     <?php $this->endBody() ?>
     </body>
     </html>

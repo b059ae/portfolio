@@ -17,27 +17,14 @@ class SiteController extends Controller
         ];
     }
 
-    public function actionTest(){
-        return $this->render('test');
-    }
-
+    /**
+     * Главная страница
+     * @return string
+     */
     public function actionIndex()
     {
-        $features = Entity::cat('preimusestva');
-
-        $kley = Catalog::cat('klej');
-        $syrie = Catalog::cat('syre-dla-klea');
 
         return $this->render('index',[
-            'features'=>$features->getItems(),
-            'kley'=>$kley,
-            'kley_items'=>$kley->getItems([
-                'pagination' => ['pageSize' => 4],
-            ]),
-            'syrie'=>$syrie,
-            'syrie_items'=>$syrie->getItems([
-                'pagination' => ['pageSize' => 4],
-            ]),
         ]);
     }
 }

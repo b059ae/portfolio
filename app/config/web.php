@@ -31,14 +31,9 @@ $config = [
         ],
         'urlManager' => [
             'rules' => [
-                '<category:(syre-dla-klea|klej)>/<slug:[\w-]+>' => 'catalog/view',
-                '<slug:(syre-dla-klea|klej)>' => 'catalog/cat',
-                '<category:(blog)>/<slug:[\w-]+>' => 'articles/view',
-                '<slug:(blog)>' => 'articles/cat',
-                'dostavka' => 'page/dostavka',
-                'kontaktnaya-informacia' => 'page/kontakty',
                 '<controller:\w+>/view/<slug:[\w-]+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+                '<controller:\w+>/cat/<slug:[\w-]+>' => '<controller>/cat',
             ],
         ],
         'assetManager' => [
