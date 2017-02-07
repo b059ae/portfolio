@@ -49,9 +49,9 @@ Control panel and tools based on php framework Yii2. Easy cms for easy websites.
 
 Копируем установщик.
 
-    cp /app/controllers/InstallController.php.sample /app/controllers/InstallController.php 
-    cp /app/views/layouts/install.php.sample /app/views/layouts/install.php
-    cp /app/views/install.sample /app/views/install
+    cp app/controllers/InstallController.php.sample app/controllers/InstallController.php 
+    cp app/views/layouts/install.php.sample app/views/layouts/install.php
+    cp -R app/views/install.sample app/views/install
     
 Заходим в веб-интерфейс http://mysite.localhost/install и устанавливаем CMS.
 После установки удаляем установщика.
