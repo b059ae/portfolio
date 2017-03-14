@@ -56,9 +56,9 @@ Control panel and tools based on php framework Yii2. Easy cms for easy websites.
 Заходим в веб-интерфейс http://mysite.localhost/install и устанавливаем CMS.
 После установки удаляем установщика.
 
-    rm /app/controllers/InstallController.php 
-    rm /app/views/layouts/install.php 
-    rm -R /app/views/install
+    rm app/controllers/InstallController.php 
+    rm app/views/layouts/install.php 
+    rm -R app/views/install
     
     
 #### Создание git-репозитория
