@@ -497,7 +497,7 @@ CREATE TABLE `easyii_menu` (
   `items` text,
   `status` tinyint(1) DEFAULT '1',
   PRIMARY KEY (`menu_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -506,6 +506,7 @@ CREATE TABLE `easyii_menu` (
 
 LOCK TABLES `easyii_menu` WRITE;
 /*!40000 ALTER TABLE `easyii_menu` DISABLE KEYS */;
+INSERT INTO `easyii_menu` (`menu_id`, `slug`, `title`, `items`, `status`) VALUES (1,'main','main','[\n    {\n        \"label\": \"Home\",\n        \"url\": \"/\"\n    },\n    {\n        \"label\": \"Portfolio\",\n        \"url\": \"/#portfolio\"\n    },\n    {\n        \"label\": \"Download CV\",\n        \"url\": \"/cv.pdf\"\n    },\n    {\n        \"label\": \"Blog\",\n        \"url\": \"/blog/\"\n    }\n]',1);
 /*!40000 ALTER TABLE `easyii_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -918,4 +919,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-10-23 15:54:41
+-- Dump completed on 2017-10-24 17:36:38
