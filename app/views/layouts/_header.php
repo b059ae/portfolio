@@ -8,6 +8,7 @@ use yii\widgets\Menu;
 <header id="header" class="header-transparent dark">
     <div id="header-wrap">
         <div class="container">
+            <?php /*
             <!--Logo-->
             <div id="logo">
                 <a href="index.html" class="logo" data-dark-logo="images/logo-dark.png">
@@ -15,14 +16,6 @@ use yii\widgets\Menu;
                 </a>
             </div>
             <!--End: Logo-->
-
-            <!--Top Search Form-->
-            <div id="top-search">
-                <form action="search-results-page.html" method="get">
-                    <input type="text" name="q" class="form-control" value="" placeholder="Start typing & press  &quot;Enter&quot;">
-                </form>
-            </div>
-            <!--end: Top Search Form-->
 
             <!--Header Extras-->
             <div class="header-extras">
@@ -38,6 +31,7 @@ use yii\widgets\Menu;
                 </ul>
             </div>
             <!--end: Header Extras-->
+            */ ?>
 
             <!--Navigation Resposnive Trigger-->
             <div id="mainMenu-trigger">
@@ -46,7 +40,7 @@ use yii\widgets\Menu;
             <!--end: Navigation Resposnive Trigger-->
 
             <!--Navigation-->
-            <div id="mainMenu" class="menu-slide light items-visible">
+            <div id="mainMenu" class="menu-left light">
                 <div class="container">
                     <nav>
                         <ul>
