@@ -15,26 +15,18 @@
                 <!-- Captions -->
                 <h2 class="text-light">Creative Studio</h2>
                 <h4 class="m-b-40 text-light">Set your goals high, and don't stop till you get there.</h4>
-                <button type="button" class="btn btn-light btn-outline"><span class="btn-label"><i class="fa fa-check"></i></span>Explore more</button>
-                <div class="align-center">
-
-                    <a class="btn btn-xs btn-slide btn-light" href="#">
-                        <i class="fa fa-facebook"></i>
-                        <span>Facebook</span>
-                    </a>
-                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="100">
-                        <i class="fa fa-twitter"></i>
-                        <span>Twitter</span>
-                    </a>
-                    <a class="btn btn-xs btn-slide btn-light" href="#" data-width="118">
-                        <i class="fa fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                    <a class="btn btn-xs btn-slide btn-light" href="mailto:#" data-width="80">
-                        <i class="fa fa-envelope"></i>
-                        <span>Mail</span>
-                    </a>
+                <!-- Social icons -->
+                <div class="social-icons social-icons-light social-icons-border social-icons-medium float-left m-t-20">
+                    <ul>
+                        <li class="social-github"><a href="#"><i class="fa fa-github"></i></a></li>
+                        <li class="social-linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="social-skype"><a href="#"><i class="fa fa-skype"></i></a></li>
+                        <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="social-gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                    </ul>
                 </div>
+                <!-- end: Social icons -->
                 <!-- end: Captions -->
             </div>
         </div>
