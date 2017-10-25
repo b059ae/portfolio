@@ -10,11 +10,12 @@ class AppAsset extends \yii\web\AssetBundle
         'css/style.css',
     ];
     public $js = [
+        'js/jquery.js',
         'js/plugins.js',
         'js/functions.js',
     ];
     public $depends = [
-        'yii\web\JqueryAsset',
-        //'yii\bootstrap\BootstrapAsset',
+//        'yii\web\JqueryAsset',
+//        'yii\bootstrap\BootstrapAsset',
     ];
 }

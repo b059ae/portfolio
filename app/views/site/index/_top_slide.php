@@ -9,7 +9,7 @@
 <div id="slider" class="inspiro-slider" data-height-xs="360">
 
     <!-- Slide 1 -->
-    <div class="slide" style="background-image: url('/images/slider.jpg'); height: 953px;">
+    <div class="slide" style="background-image: url('/images/entrepreneur-593377_1920.jpg'); height: 953px;">
         <div class="container">
             <div class="slide-captions">
                 <!-- Captions -->
