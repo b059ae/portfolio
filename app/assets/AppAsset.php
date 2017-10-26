@@ -5,13 +5,17 @@ class AppAsset extends \yii\web\AssetBundle
 {
     public $sourcePath = '@app/media';
     public $css = [
-        'css/styles.css',
+        'css/plugins.css',
+        'css/style.css',
+        'css/responsive.css',
     ];
     public $js = [
-        'js/scripts.js'
+        'js/jquery.js',
+        'js/plugins.js',
+        'js/functions.js'
     ];
     public $depends = [
-        'yii\web\JqueryAsset',
-        'yii\bootstrap\BootstrapAsset',
+        /*'yii\web\JqueryAsset',
+        'yii\bootstrap\BootstrapAsset',*/
     ];
 }

@@ -5,34 +5,35 @@
 use yii\helpers\Url;
 use yii\widgets\Menu;
 ?>
-<header>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="<?= Url::home() ?>">Easyii shop</a>
+<!-- Header -->
+<header id="header" class="hidden-md hidden-lg">
+    <div id="header-wrap">
+        <div class="container">
+            <!--Logo-->
+            <!--Logo-->
+            <div id="logo">
+                <a href="index.html" class="logo" data-dark-logo="images/logo-sidebar-dark.png">
+                    <img src="images/logo-sidebar.png" alt="Polo Logo">
+                </a>
             </div>
+            <!--End: Logo-->
+            <!--End: Logo-->
 
-            <div class="collapse navbar-collapse" id="navbar-menu">
-                <?= Menu::widget([
-                    'options' => ['class' => 'nav navbar-nav'],
-                    'items' => [
-                        ['label' => 'Home', 'url' => ['site/index']],
-                        ['label' => 'Shop', 'url' => '#'],
-                        ['label' => 'News', 'url' => '#'],
-                        ['label' => 'Articles', 'url' => '#'],
-                        ['label' => 'Gallery', 'url' => '#'],
-                        ['label' => 'Guestbook', 'url' => '#'],
-                        ['label' => 'FAQ', 'url' => '#'],
-                        ['label' => 'Contact', 'url' => '#'],
-                    ],
-                ]); ?>
+            <!--Header Extras-->
+            <div class="header-extras">
+                <ul>
+                    <li>
+                        <!--side panel-->
+                        <a id="side-panel-trigger" href="#" class="toggle-item" data-target="body" data-class="side-panel-active">
+                            <i class="fa fa-bars"></i>
+                            <i class="fa fa-close"></i>
+                        </a>
+                        <!--end: side panel-->
+                    </li>
+                </ul>
             </div>
+            <!--end: Header Extras-->
         </div>
-    </nav>
+    </div>
 </header>
+<!-- end: Header -->

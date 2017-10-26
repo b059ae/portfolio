@@ -19,11 +19,16 @@ $asset = \app\assets\AppAsset::register($this);
         <link rel="icon" href="<?= $asset->baseUrl ?>/favicon.ico" type="image/x-icon">
         <?php $this->head() ?>
     </head>
-    <body>
+    <body class="wide side-panel side-panel-static">
     <?php $this->beginBody() ?>
+    <?= $this->render('_side', ['asset' => $asset]); ?>
+    <!-- Wrapper -->
+    <div id="wrapper">
     <?= $this->render('_header', ['asset' => $asset]); ?>
     <?= $content ?>
     <?= $this->render('_footer', ['asset' => $asset]); ?>
+    </div>
+    <!-- end: Wrapper -->
     <?php $this->endBody() ?>
     </body>
     </html>
