@@ -18,6 +18,7 @@
                 <!-- Social icons -->
                 <div class="social-icons social-icons-light social-icons-border social-icons-medium float-left m-t-20">
                     <ul>
+                        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
                         <li class="social-github"><a href="#"><i class="fa fa-github"></i></a></li>
                         <li class="social-linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
                         <li class="social-skype"><a href="#"><i class="fa fa-skype"></i></a></li>
