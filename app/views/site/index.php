@@ -1,8 +1,35 @@
 <?php
-$this->title = 'EasyiiCMS start page';
+/** @var $page \yii\easyii\modules\page\api\PageObject */
+/** @var $items \yii\easyii\modules\catalog\api\ItemObject[] */
+
+$this->registerMetaTag([
+    'name' => 'description',
+    'content' => $page->seo('description')
+]);
+$this->title = $page->seo('title', $page->getTitle());
 ?>
 <!-- Portfolio -->
 <div id="portfolio" class="grid-layout portfolio-3-columns" data-margin="0">
+    <?php foreach ($items as $item): ?>
+        <!-- portfolio item -->
+        <div class="portfolio-item img-zoom pf-illustrations pf-uielements pf-media">
+            <div class="portfolio-item-wrap">
+                <div class="portfolio-image">
+                    <a data-lightbox="ajax" href="<?= \yii\helpers\Url::to(['/portfolio/' . $item->slug]) ?>">
+                        <img src="<?= $item->thumb(600, 431) ?>"/>
+                    </a>
+                </div>
+                <div class="portfolio-description">
+                    <a data-lightbox="ajax" href="<?= \yii\helpers\Url::to(['/portfolio/' . $item->slug]) ?>">
+                        <h3><?= $item->getTitle() ?></h3>
+                        <p><?= $item->short ?></p>
+                        <i class="fa fa-expand"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- end: portfolio item -->
+    <?php endforeach; ?>
     <!-- portfolio item -->
     <div class="portfolio-item img-zoom pf-illustrations pf-uielements pf-media">
         <div class="portfolio-item-wrap">
@@ -15,7 +42,7 @@ $this->title = 'EasyiiCMS start page';
                 <a data-lightbox="ajax" href="/portfolio-page.html">
                     <h3>Luxury Wine</h3>
                     <p>Graphics / Branding</p>
-                                        <i class="fa fa-expand"></i>
+                    <i class="fa fa-expand"></i>
                 </a>
             </div>
         </div>

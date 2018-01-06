@@ -5,26 +5,31 @@
  * Date: 06.01.2018
  * Time: 10:08
  */
+/** @var $item \yii\easyii\modules\catalog\api\ItemObject */
+
+$this->registerMetaTag([
+    'name' => 'description',
+    'content' => $item->seo('description')
+]);
+$this->title = $item->seo('title', $item->getTitle());
 ?>
 <div class="portfolio-ajax-page">
     <div class="col-md-7">
         <div class="carousel arrows-grey arrows-only arrows-visible dots-dark dots-inside" data-items="1">
-            <img src="http://via.placeholder.com/899x945">
-            <img src="http://via.placeholder.com/899x945">
-            <img src="http://via.placeholder.com/899x945">
+            <?php foreach ($item->photos as $photo) : ?>
+                <?= $photo->box(1315, 945) ?>
+            <?php endforeach; ?>
         </div>
     </div>
     <div class="col-md-5">
         <div class="project-description">
-            <h2>Woody Chair</h2>
-            <p>Woody Chair has the guts to design and develop the impossible. </p>
-            <p>With passion and a lot of expertise we create a surprisingly timeless collection of beautiful functional furniture, made with innovative and sustainable materials. Our brand represents connection.</p>
+            <h2><?= $item->getTitle() ?></h2>
+            <?= $item->getDescription() ?>
             <hr>
             <div class="portfolio-attributes style1">
-                <div class="attribute"><strong>Client:</strong> Woody Chair</div>
-                <div class="attribute"><strong>Website:</strong> <a href="http://inspiro-media.com/" title="Woody Chair" target="_blank">inspiro-media.com</a></div>
-                <div class="attribute"><strong>Date:</strong> 2017-09-01</div>
-                <div class="attribute"><strong>Services:</strong> Website Design, UX</div>
+                <div class="attribute"><strong>Website:</strong> <?= \yii\helpers\Html::a($item->website, 'http://'.$item->website, ['rel'=>'nofollow', 'target'=>'_blank']) ?></div>
+                <div class="attribute"><strong>Date:</strong> <?= $item->date ?></div>
+                <div class="attribute"><strong>Services:</strong> <?= implode(' / ', $item->services) ?></div>
             </div>
             <!--<hr>
             <div class="portfolio-share m-t-20">
