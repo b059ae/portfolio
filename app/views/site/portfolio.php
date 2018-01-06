@@ -1,9 +1,17 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: b059a
+ * Date: 06.01.2018
+ * Time: 10:08
+ */
+?>
 <div class="portfolio-ajax-page">
     <div class="col-md-7">
         <div class="carousel arrows-grey arrows-only arrows-visible dots-dark dots-inside" data-items="1">
-            <img src="http://via.placeholder.com/585x615">
-            <img src="http://via.placeholder.com/585x615">
-            <img src="http://via.placeholder.com/585x615">
+            <img src="http://via.placeholder.com/899x945">
+            <img src="http://via.placeholder.com/899x945">
+            <img src="http://via.placeholder.com/899x945">
         </div>
     </div>
     <div class="col-md-5">
@@ -44,3 +52,4 @@
         </div>
     </div>
 </div>
+

@@ -43,7 +43,7 @@ $this->title = 'EasyiiCMS start page';
                 <a href="#"><img src="http://via.placeholder.com/600x400" alt=""></a>
             </div>
             <div class="portfolio-description">
-                <a data-lightbox="ajax" href="/portfolio-page.html">
+                <a data-lightbox="ajax" href="/portfolio/wine-pro">
                     <h3>Last Iceland Sunshine</h3>
                     <span>Graphics</span>
                 </a>

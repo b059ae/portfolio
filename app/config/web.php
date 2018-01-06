@@ -18,7 +18,7 @@ $config = [
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'salpfm3kfmk34mf3m4fklm',
+            'cookieValidationKey' => 'salpfm3kf1df2mf3m4fklm',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -31,6 +31,8 @@ $config = [
         ],
         'urlManager' => [
             'rules' => [
+                'portfolio/<slug:[\w-]+>' => 'site/portfolio',
+
                 '<controller:\w+>/view/<slug:[\w-]+>' => '<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/cat/<slug:[\w-]+>' => '<controller>/cat',
