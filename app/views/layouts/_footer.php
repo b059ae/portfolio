@@ -16,7 +16,7 @@ use yii\widgets\Menu;
                 <div class="col-md-4">
                     <!-- Footer widget area 1 -->
                     <div class="widget clearfix widget-contact-us" style="background-image: url('images/world-map-dark.png'); background-position: 50% 20px; background-repeat: no-repeat">
-                        <h4>About POLO</h4>
+                        <h4>About me</h4>
                         <ul class="list-icon">
                             <li><i class="fa fa-map-marker"></i> 795 Folsom Ave, Suite 600
                                 <br>San Francisco, CA 94107</li>
@@ -28,6 +28,7 @@ use yii\widgets\Menu;
                                 <br>Saturday, Sunday: <strong>Closed</strong>
                             </li>
                         </ul>
+                        <?php /*
                         <!-- Social icons -->
                         <div class="social-icons social-icons-border float-left m-t-20">
                             <ul>
@@ -41,25 +42,25 @@ use yii\widgets\Menu;
                             </ul>
                         </div>
                         <!-- end: Social icons -->
+                        */ ?>
                     </div>
                     <!-- end: Footer widget area 1 -->
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-4">
                     <!-- Footer widget area 2 -->
                     <div class="widget">
                         <h4>Quick LInks</h4>
                         <ul class="list-icon list-icon-arrow">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Shortcodes</a></li>
+                            <?php foreach (yii\easyii\modules\menu\api\Menu::items('main') as $item): ?>
+                                <li>
+                                    <a href="<?= $item['url'] ?>"><?= $item['label'] ?></a>
+                                </li>
+                            <?php endforeach; ?>
                         </ul>
                     </div>
                     <!-- end: Footer widget area 2 -->
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <!-- Footer widget area 3 -->
                     <div class="widget">
                         <h4>Latest From Our Blog</h4>
@@ -92,6 +93,7 @@ use yii\widgets\Menu;
                     </div>
                     <!-- end: Footer widget area 3 -->
                 </div>
+                <?php /*
                 <div class="col-md-3">
                     <!-- Footer widget area 4 -->
                     <div class="widget widget-tweeter" data-username="ardianmusliu" data-limit="2">
@@ -99,13 +101,13 @@ use yii\widgets\Menu;
                     </div>
                     <!-- end: Footer widget area 4 -->
                 </div>
+ */ ?>
             </div>
         </div>
     </div>
     <div class="copyright-content">
         <div class="container">
-            <div class="copyright-text text-center">&copy; 2016 POLO - Best HTML5 Template Ever. All Rights Reserved. <a href="http://www.inspiro-media.com" target="_blank">INSPIRO</a>
-            </div>
+            <div class="copyright-text text-center">&copy; <?=date('Y')?> &mdash; Alexander Popov. All Rights Reserved.</div>
         </div>
     </div>
 </footer>

@@ -6770,6 +6770,10 @@ span.rec-by {
 .social-icons.social-icons-colored-hover .social-facebook a:hover {
   background-color: #5d82d1; }
 
+.social-icons.social-icons-colored .social-vk a,
+.social-icons.social-icons-colored-hover .social-vk a:hover {
+  background-color: #5181B8; }
+
 .social-icons.social-icons-colored .social-twitter a,
 .social-icons.social-icons-colored-hover .social-twitter a:hover {
   background-color: #40bff5; }
@@ -6882,9 +6886,17 @@ span.rec-by {
 .social-icons.social-icons-colored-hover .social-quora a:hover {
   background-color: #ea3d23; }
 
+.social-icons.social-icons-colored .social-mail a,
+.social-icons.social-icons-colored-hover .social-mail a:hover {
+  background-color: #ea3d23; }
+
 .social-icons.social-icons-colored .social-github a,
 .social-icons.social-icons-colored-hover .social-github a:hover {
   background-color: #3f91cb; }
+
+.social-icons.social-icons-colored .social-bitbucket a,
+.social-icons.social-icons-colored-hover .social-bitbucket a:hover {
+  background-color: #0052CC; }
 
 .social-icons.social-icons-colored .social-amazon a,
 .social-icons.social-icons-colored-hover .social-amazon a:hover {
